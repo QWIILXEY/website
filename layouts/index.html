@@ -1,0 +1,36 @@
+{{ define "main" }}
+    <div>
+        <div class='mainbg'>
+            {{ if .Site.Params.backgroundImage }}
+                <img src="{{ .Site.Params.backgroundVideo }}" alt="Background" class="background-image">
+            {{ else }}
+                <video autoplay muted loop>
+                    {{ if .Site.Params.background }}
+                        <source src="{{ .Site.Params.backgroundVideo }}" type="video/webm">
+                    {{ else }}
+                        <source src="bg.webm" type="video/webm">
+                    {{ end }}
+                </video>
+            {{ end }}
+            <div class='content'>
+                <div>
+                    <div class='contenthead'>
+                        <h1 class='contentheading'>{{ .Site.Params.title }}</h1>
+                        <h5 class='contenttext'>{{ .Site.Params.text }}</h5>
+                    </div>
+                    <div class='contentbtn'>
+                        {{ range .Site.Params.links }}
+                            <a href="{{ .url }}" class='btn btn-outline-light' role='button' 
+                                {{ if or (.newTab | default false) }}
+                                    target="_blank"
+                                {{ else }}
+                                    target="_self"
+                                {{ end }}
+                            >{{ .name }}</a>
+                        {{ end }}
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ end }}
