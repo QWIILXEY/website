@@ -8,7 +8,7 @@ languageCode = "en-us"
     {name = "Twitter", url = "https://x.com/qwiilxey", newTab = true},
     {name = "Bluesky", url = "https://bsky.app/profile/qwiilxey.me", newTab = true},
     {name = "Github", url = "https://github.com/QWIILXEY", newTab = true},
-    {name = "Last.fm", url = "https://www.last.fm/user/suffixrs", newTab = true},
+    {name = "Last.fm", url = "https://www.last.fm/user/Qwiilxey", newTab = true},
     {name = "Steam", url = "https://steamcommunity.com/id/qwiilxey/", newTab = true},
     {name = "Etterna", url = "https://etternaonline.com/users/QWIILXEY", newTab = true},
   ]
